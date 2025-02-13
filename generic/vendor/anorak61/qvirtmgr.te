@@ -59,4 +59,7 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
 
-vendor.qti.hardware.display.demura::IDemuraFileFinder           u:object_r:vendor_hal_display_demura_hwservice:s0
+# Qvirtmgr Policies
+allow vendor_qvirtmgr vendor_sysfs_guestvm:file rw_file_perms;
+allow vendor_qvirtmgr vendor_virtio_chr_device:chr_file rw_file_perms;
+allow vendor_qvirtmgr same_process_hal_file:file r_file_perms;
